@@ -1,1 +1,3 @@
 # notes
+
+This is for upload notes from Angular, React and more...
