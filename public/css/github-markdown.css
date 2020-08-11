@@ -985,13 +985,18 @@
   vertical-align: middle;
 }
 
-.markdown-body .bread-crumbs{
+.markdown-body .bread-crumbs {
   color: #24292e;
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
   font: 12px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   line-height: 1.5;
+}
+
+.markdown-body .bread-crumbs p,
+.markdown-body .bread-crumbs a {
+  display: inherit;
 }
 
 
