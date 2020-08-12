@@ -999,7 +999,15 @@
   display: inherit;
 }
 
+.markdown-body .bread-crumbs p {
+  font-weight: bold;
+}
 
+.markdown-body .bread-crumbs p::before {
+  content: ">";
+  padding-right: .4rem;
+  font-weight: lighter;
+}
 
 
 /* Mobile */
