@@ -4,8 +4,7 @@ import styles from './navigation-aside.module.css'
 export default function NavigationAside() {
   return (
     <aside className={styles.navigationAside}>
-      navigation aside
-      <h3>En esta página</h3>
+      <h3>navigation aside. En esta página...</h3>
       <ul>
         <li>
           <Link href='/'>link sobre el texto principal</Link>

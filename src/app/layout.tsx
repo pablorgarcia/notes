@@ -2,13 +2,12 @@ import './styles/globals.css'
 import { Inter } from 'next/font/google'
 import HeadData from './components/head-data/head-data'
 import TopHeader from './components/top-header/top-header'
-import MainContent from './components/main-content/main-content'
-import NavigationAside from './components/navigation-aside/navigation-aside'
+import BottomFooter from './components/bottom-footer/bottom-footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Pablo García',
+  title: 'Pablo García Front-End developer',
   description: 'la descripcion',
 }
 
@@ -22,9 +21,10 @@ export default function RootLayout({
       <HeadData />
       <body className={inter.className}>
         <TopHeader />
-        <MainContent />
-        {children}
-        <NavigationAside />
+        <main>
+          {children}
+        </main>
+        <BottomFooter />
       </body>
     </html>
   )

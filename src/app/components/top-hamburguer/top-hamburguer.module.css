@@ -1,0 +1,70 @@
+
+.todo {
+  display: block;
+  height: 3rem;
+  width: 2rem;
+  background-color: #333;
+  border: none;
+}
+
+.todo > span {
+  display: block;
+  height: 1rem;
+  width: 2rem;
+  background-color: red;
+}
+
+
+.rotate-45, 
+.translate-y-1, 
+.-translate-y-05, 
+.opacity-100, 
+.opacity-0, 
+.-rotate-45, 
+.-translate-y-1 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.links {
+  padding-top: 1rem;
+}
+
+.contacts {
+  padding-top: 3rem;
+}
+
+.ham {
+  /* flex flex-col justify-center items-center */
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburguerMenu {
+  width: "30px";
+  height: "3px";
+  background: "#fff";
+  transition: "all 0.5s ease-in-out"
+}
+.hamburguerMenu::before {
+  content: "''";
+  position: "absolute";
+  width: "30px";
+  height: "3px";
+  background-color: "#fff";
+  border-radius: "5px";
+  transition: "all 0.5s ease-in-out";
+  transform: "translateY(-10px)";
+}
+.hamburguerMenu::after {
+  content: "''";
+  position: absolute;
+  width: "30px";
+  height: "3px";
+  background: "#fff";
+  border-radius: "5px";
+  transition: "all 0.5s ease-in-out";
+  transform: "translateY(10px)";
+}
